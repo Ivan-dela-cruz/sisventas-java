@@ -1,0 +1,1 @@
+ALTER TABLE reportes_cliente ADD CONSTRAINT TIENE FOREIGN KEY (id_tab_cliente) REFERENCES clientes(id_tab);

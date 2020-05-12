@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="sisventasPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>models.Producto</class>
+    <class>models.Empleado</class>
+    <class>models.Usuario</class>
+    <class>models.Factura</class>
+    <class>models.Venta</class>
+    <class>models.Proveedor</class>
+    <class>models.Caja</class>
+    <class>models.Direccion</class>
+    <class>models.Pago</class>
+    <class>models.Administrador</class>
+    <class>models.Local</class>
+    <class>models.DetalleFactura</class>
+    <class>models.Cliente</class>
+    <class>models.PrestamoCliente</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sisventas?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="sisventasPU2" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>models.Administrador</class>
+    <class>models.Caja</class>
+    <class>models.Cliente</class>
+    <class>models.DetalleFactura</class>
+    <class>models.Empleado</class>
+    <class>models.Factura</class>
+    <class>models.Local</class>
+    <class>models.Producto</class>
+    <class>models.Proveedor</class>
+    <class>models.Usuario</class>
+    <class>models.Venta</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sisventas2?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
